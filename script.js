@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     let taskIndex = 0;
     let currentTasks = [];
-
     addTaskButton.addEventListener('click', addTask);
     generateListButton.addEventListener('click', generateTaskList);
     emojiMenuButton.addEventListener('click', toggleEmojiMenu);
@@ -234,6 +233,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.body.removeChild(overlay);
         document.body.removeChild(popup);
     }
+    function loadCreator() {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            document.getElementById("create-responsiv").addEventListener("click", function() {
+                document.getElementById("create-responsiv").style.display = "none";
+                document.getElementById("form-container").style.display = "block";
+            });
+            document.getElementById("generate-list-button").addEventListener("click", function() {
+                document.getElementById("form-container").style.display = "none";
+                document.getElementById("create-responsiv").style.display = "block";
+            });
+          }else{
+            document.getElementById("create-responsiv").style.display = "none";
+          }
+    }
 
     loadTasks();
+    loadCreator();
+    
+    
+
 });
+/*****************************/
+// Au chargement de la page, afficher le bouton "Créer une liste"
+// ////document.getElementById("create-responsiv").style.display = "block";
+
+// Gestionnaire d'événement pour "Créer une liste"
+
+
+// Gestionnaire d'événement pour le bouton "Générer"
+

@@ -8,44 +8,45 @@
 </head>
 <body>
     <h1>🏆 QUEST 🏆</h1>
-    
-    <h2 style="position: fixed; right: 50px;top: 40px;">Créer une nouvelle quête !</h2>
-    <form id="task-form">
-        <div class="segment-bloc">
-            <div class="input-bloc">
-                <label for="title-input">Titre de la Quête :</label>
-                <input type="text" id="title-input" name="title">
-            </div>
-            
-            <div class="emoji-menu">
-                <button type="button" id="emoji-menu-button">🏆</button>
-                <div id="emoji-dropdown" class="emoji-dropdown">
-                    <span class="emoji" data-emoji="🧙">🧙</span>
-                    <span class="emoji" data-emoji="🧅">🧅</span>
-                    <span class="emoji" data-emoji="👹">👹</span>
-                    <span class="emoji" data-emoji="🍀">🍀</span>
-                    <span class="emoji" data-emoji="🏆">🏆</span>
-                    <span class="emoji" data-emoji="🦕">🦕</span>
-                    <span class="emoji" data-emoji="✈️">✈️</span>
-                    <span class="emoji" data-emoji="🏋️‍♀️">🏋️‍♀️</span>
-                    <span class="emoji" data-emoji="💰">💰</span>
-                </div>
-            </div>
-        </div>
-        <div id="top-bloc">
-            
+    <div id="create-responsiv">Créer une liste</div>
+    <div id="form-container">
+        <h2 style="position: absolute; right: 50px;top: 40px;">Créer une nouvelle quête !</h2>
+        <form id="task-form">
             <div class="segment-bloc">
                 <div class="input-bloc">
-                    <label for="task-input">Ajouter une tache :</label>
-                    <input type="text" id="task-input" name="task">
+                    <label for="title-input">Titre de la Quête :</label>
+                    <input type="text" id="title-input" name="title">
                 </div>
-                <button type="button" id="add-task-button">+</button>
+                
+                <div class="emoji-menu">
+                    <button type="button" id="emoji-menu-button">🏆</button>
+                    <div id="emoji-dropdown" class="emoji-dropdown">
+                        <span class="emoji" data-emoji="🧙">🧙</span>
+                        <span class="emoji" data-emoji="🧅">🧅</span>
+                        <span class="emoji" data-emoji="👹">👹</span>
+                        <span class="emoji" data-emoji="🍀">🍀</span>
+                        <span class="emoji" data-emoji="🏆">🏆</span>
+                        <span class="emoji" data-emoji="🦕">🦕</span>
+                        <span class="emoji" data-emoji="✈️">✈️</span>
+                        <span class="emoji" data-emoji="🏋️‍♀️">🏋️‍♀️</span>
+                        <span class="emoji" data-emoji="💰">💰</span>
+                    </div>
+                </div>
             </div>
-            <div id="temp-task-list"></div>
-            <button type="button" id="generate-list-button">Générer</button>
-        </div>
-    </form>
-
+            <div id="top-bloc">
+                
+                <div class="segment-bloc">
+                    <div class="input-bloc">
+                        <label for="task-input">Ajouter une tache :</label>
+                        <input type="text" id="task-input" name="task">
+                    </div>
+                    <button type="button" id="add-task-button">+</button>
+                </div>
+                <div id="temp-task-list"></div>
+                <button type="button" id="generate-list-button">Générer</button>
+            </div>
+        </form>
+    </div>
     <h2>Quêtes en cours</h2>
     <div id="show-finished-group-checkbox">
         <input type="checkbox" id="show-finished-tasks">
