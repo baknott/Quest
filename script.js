@@ -254,12 +254,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
 
 });
-/*****************************/
-// Au chargement de la page, afficher le bouton "Créer une liste"
-// ////document.getElementById("create-responsiv").style.display = "block";
-
-// Gestionnaire d'événement pour "Créer une liste"
-
-
-// Gestionnaire d'événement pour le bouton "Générer"
-
